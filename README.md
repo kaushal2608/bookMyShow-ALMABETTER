@@ -81,13 +81,11 @@ Note : your mongodb clustur connect key
 
 For support, *email* 
 - kaushalyadav2695@gmail.com
+
 or connect on *linkedin*
-- Kaushal Kishor .
 
-https://www.linkedin.com/in/kaushalkishor07/
+- Kaushal Kishor :- https://www.linkedin.com/in/kaushalkishor07/
 
-
-www.linkedin.com/in/Arpan-waddewar
 ## project created with 
 
 - [@Arpan waddewar]( https://github.com/Arpanwaddewar )
