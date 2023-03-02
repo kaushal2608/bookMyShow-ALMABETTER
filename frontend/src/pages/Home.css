@@ -1,0 +1,73 @@
+.container {
+  width: 85%;
+  margin: 30px auto;
+  padding: 20px 20px 0px 20px;
+  background-color: #eae7e7;
+  border-radius: 10px;
+  border: 2px solid rgb(0, 0, 0);
+  color: #111111;
+  box-shadow: 15px 15px 15px rgba(120, 120, 122, 0.699);
+}
+
+.container .selection_container {
+  width: 100%;
+}
+
+.select_movie_component {
+  flex-grow: 1;
+}
+
+.BN-btn {
+  padding: 10px;
+  border: none;
+  margin-top: 20px;
+  left: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 25px;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  background-image: linear-gradient(rgb(0, 34, 255), rgb(0, 255, 106));
+  border-image: linear-gradient(rgb(0, 34, 255), rgb(0, 255, 106));
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.BN-btn:hover {
+  background-image: linear-gradient(rgb(0, 255, 132), rgb(0, 64, 255));
+  color: #f7f1f1;
+}
+
+.wrapper {
+  display: flex;
+  flex-grow: 0;
+  overflow: visible;
+}
+.time_seats_container {
+  position: relative;
+  overflow: auto;
+  top: -10px;
+}
+.SS_wrapper {
+  margin-top: 50px;
+}
+
+@media screen and (max-width: 1300px) {
+  .wrapper {
+    flex-direction: column-reverse;
+  }
+
+  .time_seats_container {
+    top: 0px;
+  }
+  .last_booking_details_container {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .container {
+    width: 95%;
+    padding: 15px;
+  }
+}
