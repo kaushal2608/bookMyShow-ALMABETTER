@@ -1,4 +1,4 @@
-# Almabetter - Capston project ( 2nd ) - BookMyShow
+# Almabetter - Capstone project ( 2nd ) - BookMyShow
 
 This is a backend capston project given by almabetter in this project we created bookmyshow website this project have vary simple UI and this website is very easy to use ( userfriendly )  and also a work in any devices ( Responsiveness ) .
  
