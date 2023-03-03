@@ -1,4 +1,4 @@
-# Almabetter - Capston project ( 2nd ) - BookMyShow
+# Almabetter - Capstone project ( 2nd ) - BookMyShow
 
 This is a backend capston project given by almabetter in this project we created bookmyshow website this project have vary simple UI and this website is very easy to use ( userfriendly )  and also a work in any devices ( Responsiveness ) .
  
@@ -79,10 +79,10 @@ Note : your mongodb clustur connect key
 
 ## Support
 
-For support, *email* 
+For support, **email**
 - kaushalyadav2695@gmail.com
 
-or connect on *linkedin*
+or connect on **linkedin**
 
 - Kaushal Kishor :- https://www.linkedin.com/in/kaushalkishor07/
 
