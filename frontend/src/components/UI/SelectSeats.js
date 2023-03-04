@@ -1,7 +1,7 @@
 import React, { useState, useContext, useEffect } from "react";
-import { seats } from "../data";
-import "./selectSeats.css";
-import BsContext from "../context/Context";
+import { seats } from "../../data";
+import "../styles/selectSeats.css";
+import BsContext from "../../context/Context";
 import SeatsInput from "./SeatsSetup";
 
 const SelectSeats = () => {

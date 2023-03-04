@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
-import "./lastbookingdetails.css";
+import "../styles/lastbookingdetails.css";
 import { useContext } from "react";
-import BsContext from "../context/Context";
-import { seats } from "../data";
+import BsContext from "../../context/Context";
+import { seats } from "../../data";
 
 const LastBookingDetails = (props) => {
   const context = useContext(BsContext);

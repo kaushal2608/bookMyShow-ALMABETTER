@@ -1,19 +1,19 @@
-import React, { useContext } from "react";
+import React, { useContext, useCallback } from "react";
 import RadioComponent from "./RadioComponent";
-import { slots } from "../data"; 
-import "./movieTiming.css";
-import BsContext from "../context/Context";
+import { slots } from "../../data"; 
+import "../styles/movieTiming.css";
+import BsContext from "../../context/Context";
 
 const TimeShedule = () => {
   const context = useContext(BsContext);
 
   const { time, changeTime } = context;
 
-  const handleChangeTime = (value) => {
-    // this will used to update the selected time and store in localstorage
+  const handleChangeTime = useCallback((value) => {
+    //The useCallback hook is used to memoize this function so that it is only created once and not recreated on every re-render of the component.
     changeTime(value);
     window.localStorage.setItem("slot", value);
-  };
+  }, [changeTime]);
 
   return (
     <>

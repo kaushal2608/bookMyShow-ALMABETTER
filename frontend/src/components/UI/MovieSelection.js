@@ -1,13 +1,23 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import RadioComponent from "./RadioComponent";
-import { moviesList } from "../data";
-import BsContext from "../context/Context";
-import "./movieSelection.css";
+import { moviesList } from "../../data";
+import BsContext from "../../context/Context";
+import "../styles/movieSelection.css";
 
 const SelectMovie = () => {
   const context = useContext(BsContext);
 
   const { movie, changeMovie } = context;
+  useEffect(() => {
+    // Get the selected movie from local storage
+    const selectedMovie = window.localStorage.getItem("movie");
+
+    // The useEffect function takes a callback function that is executed when the component mounts and any time movie or changeMovie change.
+    if (selectedMovie && selectedMovie !== movie) {
+      changeMovie(selectedMovie);
+    }
+    // If a selected movie is found in local storage and it is different than the current movie state, it updates the context with the selected movie using the changeMovie function.
+  }, [changeMovie, movie]);
 
   // this will handle the change of selected movie
   const handleChangeMovie = (value) => {

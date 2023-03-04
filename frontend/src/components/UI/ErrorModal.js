@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
-import BsContext from "../context/Context";
-import "./errorModal.css";
+import BsContext from "../../context/Context";
+import "../styles/errorModal.css";
 
 function Modal(props) {
   // here we are getting error and the functions from context

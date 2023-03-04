@@ -1,5 +1,5 @@
 import React from "react";
-import "./radioComponent.css";
+import "../styles/radioComponent.css";
 
 
 const RadioComponent = ({ text, changeSelection, data }) => {

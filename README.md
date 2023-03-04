@@ -44,7 +44,7 @@ npm start
 
     
 ## How to use
-
+ 
 Click on this link for using the website
  - https://getbookmyshow.netlify.app
  1) First select movie you like 
@@ -75,6 +75,32 @@ Note : your mongodb clustur connect key
 
  MONGOURI : mongodb+srv://user_name:<password>@cluster0.adfedxd.mongodb.net/<batabase_name>?retryWrites=true&w=majority
 
+
+
+## API Documentation
+
+#### Base URL
+https://pear-alligator-wear.cyclic.app/api
+
+#### Booking
+get  the booking
+
+```http
+  GET /booking
+```
+Returns a list of last booking stored in the database in JSON format.
+
+```http
+  post /booking
+```
+
+| Parameter | Type     | Description                |
+| :-------- | :------- | :------------------------- |
+| `movie` | `string` | **Required**. your selected movie |
+| `slots ` | `string` | **Required**. your selected time|
+| `Seats ` | `number` | **Required**. no of seats you have seleacted|
+
+Returns the newly created booking in JSON format
 
 
 ## Support
